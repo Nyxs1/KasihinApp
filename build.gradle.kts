@@ -1,19 +1,6 @@
+// File: build.gradle.kts (Project)
 plugins {
-    id("java")
-}
-
-group = "org.kasihin"
-version = "1.0-SNAPSHOT"
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
-}
-
-tasks.test {
-    useJUnitPlatform()
+    id("com.android.application") version "8.2.2" apply false // Versi bisa berbeda
+    id("org.jetbrains.kotlin.android") version "1.9.22" apply false // Versi bisa berbeda
+    id("com.google.gms.google-services") version "4.4.1" apply false // Versi bisa berbeda
 }
