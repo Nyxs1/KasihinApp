@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">kasihinApp</string>
+
+    <!--
+      Ganti "YOUR_WEB_CLIENT_ID" dengan Web Client ID Anda yang sebenarnya.
+      Ini adalah ID yang baru saja Anda salin dari Google Cloud Console.
+    -->
+    <string name="server_client_id">156336722783-hrfghpopfk39dc3leicibf0g732pjc0j.apps.googleusercontent.com</string>
+
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "156336722783",
+    "project_id": "kasihin-app",
+    "storage_bucket": "kasihin-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156336722783:android:e5d0de155a2151f6135cea",
+        "android_client_info": {
+          "package_name": "com.kasihinapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5MQVWryepcYElJwsDSBUZbaKSgt5T32s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
