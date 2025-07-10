@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp">
+
+    <!-- Menggunakan gambar profil Erlangga -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/donasi_profile_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/profil_erlangga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/donasi_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="Erlangga"
+        android:textColor="#212121"
+        app:layout_constraintStart_toEndOf="@id/donasi_profile_image"
+        app:layout_constraintTop_toTopOf="@id/donasi_profile_image" />
+
+    <TextView
+        android:id="@+id/donasi_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donations"
+        android:textColor="#616161"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/donasi_nama"
+        app:layout_constraintTop_toBottomOf="@id/donasi_nama" />
+
+    <!-- Mengubah Poin menjadi 9.000 -->
+    <TextView
+        android:id="@+id/donasi_poin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="POIN 9.000,00"
+        android:textColor="#E53935"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/donasi_nama" />
+
+    <TextView
+        android:id="@+id/donasi_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09 May 2025"
+        android:textColor="#616161"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/donasi_poin" />
+
+    <TextView
+        android:id="@+id/donasi_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Comment\nAnjayyyyyyyyy!!!!!!!!!!!"
+        android:textColor="#424242"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/donasi_profile_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivitySignupSelesai">
+
+    <!-- Header Biru -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2A3C8E"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/plus_jakarta_sans_bold"
+            android:text="Lengkapi Data"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <!-- Stepper (Selesai menjadi aktif) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/plus_jakarta_sans_regular"
+                android:text="Identitas"
+                android:textColor="#B0B5D1"
+                app:drawableEndCompat="@drawable/ic_checkmark_circle" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/plus_jakarta_sans_regular"
+                android:gravity="center"
+                android:text="Tipe Akun"
+                android:textColor="#B0B5D1"
+                app:drawableEndCompat="@drawable/ic_checkmark_circle" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/plus_jakarta_sans_bold"
+                android:gravity="end"
+                android:text="Selesai"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Konten Putih -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:contentDescription="Ikon Sukses"
+                android:src="@drawable/ic_checkmark_circle"
+                app:tint="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/plus_jakarta_sans_bold"
+                android:text="Data Sudah Terpenuhi"
+                android:textColor="#212121"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/plus_jakarta_sans_regular"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="Siap Berbagi, Siap Mendukung Akunmu sudah jadi. Mulai Sekarang Semua dukungan berada diujung jari kamu!"
+                android:textColor="#616161"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonBeranda"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#2A3C8E"
+            android:fontFamily="@font/plus_jakarta_sans_bold"
+            android:text="Beranda"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:cornerRadius="8dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

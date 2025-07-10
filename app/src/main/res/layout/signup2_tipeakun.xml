@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".ActivityTipeakun">
 
+    <!-- Header Biru -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,6 +60,7 @@
         </LinearLayout>
     </LinearLayout>
 
+    <!-- Konten Form Putih -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -182,6 +184,7 @@
                 android:padding="12dp">
 
                 <ImageView
+                    android:id="@+id/rekeningLogoImageView"
                     android:layout_width="50dp"
                     android:layout_height="25dp"
                     android:contentDescription="Logo Bank"
@@ -195,6 +198,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/rekeningNamaTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/plus_jakarta_sans_bold"
@@ -202,6 +206,7 @@
                         android:textColor="#212121" />
 
                     <TextView
+                        android:id="@+id/rekeningDeskripsiTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/plus_jakarta_sans_regular"
@@ -218,6 +223,7 @@
             </LinearLayout>
 
             <EditText
+                android:id="@+id/editTextNoRekening"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"

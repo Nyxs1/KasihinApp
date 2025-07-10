@@ -36,6 +36,7 @@
                 android:textSize="18sp" />
 
             <RelativeLayout
+                android:id="@+id/buttonMobileBanking"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp">
@@ -87,6 +88,7 @@
                 android:textSize="18sp" />
 
             <RelativeLayout
+                android:id="@+id/buttonEwallet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp">

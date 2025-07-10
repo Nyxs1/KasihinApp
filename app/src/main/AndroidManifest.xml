@@ -15,7 +15,9 @@
         android:theme="@style/Theme.KasihinApp"
         tools:targetApi="31">
 
-        <activity android:name=".ActivityLogin1" android:exported="true">
+        <activity
+            android:name=".ActivityLogin1"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -24,8 +26,12 @@
 
         <activity android:name=".ActivitySignup1" />
         <activity android:name=".ActivityTipeakun" />
-
         <activity android:name=".ActivityPilihbank" />
+        <activity android:name=".ActivityPilihPembayaran" />
+        <activity android:name=".ActivitySignupSelesai" />
+
+        <!-- INI YANG BARU: Activity untuk Homepage -->
+        <activity android:name=".HomePage" />
 
     </application>
 
