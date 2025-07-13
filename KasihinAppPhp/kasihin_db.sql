@@ -9,7 +9,7 @@
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
-SET time_zone = "+00:00";
+SET time_zone = "+07:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -136,11 +136,11 @@ CREATE TABLE user_logs (
 -- Dumping data untuk tabel `users`
 --
 
-INSERT INTO `users` (`id`, `nama`, `email`, `password`, `role`, `poin`, `created_at`) VALUES
-(1, 'Endrico', 'endrico@mail.com', '123endrico', 'person', 1000, '2025-07-08 05:52:39'),
-(2, 'Anas', 'anas@mail.com', '123anas', 'influencer', 1000, '2025-07-08 05:52:39'),
-(3, 'Fachrizal', 'rizal@mail.com', '123rizal', 'person', 1000, '2025-07-08 05:52:39'),
-(4, 'Putra', 'putra@mail.com', '123putra', 'influencer', 1000, '2025-07-08 05:52:39');
+INSERT INTO `users` (`id`, `nama`, `email`, `password`, `role`, `poin`) VALUES
+(1, 'Endrico', 'endrico@mail.com', '123endrico', 'person', 1000),
+(2, 'Anas', 'anas@mail.com', '123anas', 'influencer', 1000),
+(3, 'Fachrizal', 'rizal@mail.com', '123rizal', 'person', 1000),
+(4, 'Putra', 'putra@mail.com', '123putra', 'influencer', 1000);
 
 --
 -- Indexes for dumped tables
