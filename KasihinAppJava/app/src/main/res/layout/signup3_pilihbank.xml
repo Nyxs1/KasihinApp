@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".ActivityPilihbank">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2A3C8E"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="Pilih Bank"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans_bold"
+                android:text="Mobile Banking"
+                android:textColor="#212121"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/buttonMobileBanking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/arrow_mobile_banking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right"
+                    android:contentDescription="Lihat semua mobile banking"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_toStartOf="@id/arrow_mobile_banking"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView android:src="@drawable/ic_logo_bca" style="@style/BankLogo"/>
+                        <ImageView android:src="@drawable/ic_logo_mandiri" style="@style/BankLogo"/>
+                        <ImageView android:src="@drawable/ic_logo_bni" style="@style/BankLogo"/>
+                        <ImageView android:src="@drawable/ic_logo_bri" style="@style/BankLogo"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/plus_jakarta_sans_bold"
+                android:text="E-Wallet"
+                android:textColor="#212121"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/buttonEwallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/arrow_ewallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right"
+                    android:contentDescription="Lihat semua e-wallet"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_toStartOf="@id/arrow_ewallet"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView android:src="@drawable/ic_logo_dana" style="@style/BankLogo"/>
+                        <ImageView android:src="@drawable/ic_logo_gopay" style="@style/BankLogo"/>
+                        <ImageView android:src="@drawable/ic_logo_linkaja" style="@style/BankLogo"/>
+                        <ImageView android:src="@drawable/ic_logo_ovo" style="@style/BankLogo"/>
+                        <ImageView android:src="@drawable/ic_logo_shopeepay" style="@style/BankLogo"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
