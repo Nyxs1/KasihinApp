@@ -45,6 +45,9 @@ switch ($endpoint) {
     case 'update_user':
         require __DIR__ . '/controllers/user/update.php';
         break;
+    case 'get_recipients':
+        require __DIR__ . '/controllers/user/get_recipients.php';
+        break;
 
     default:
         echo json_encode([

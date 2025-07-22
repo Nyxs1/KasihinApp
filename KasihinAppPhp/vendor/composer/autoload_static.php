@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit20fad51902f91e7fd3039e016a6556b5
 {
     public static $prefixLengthsPsr4 = array (
+        'M' => 
+        array (
+            'M1\\Env\\' => 7,
+        ),
         'F' => 
         array (
             'Firebase\\JWT\\' => 13,
@@ -14,9 +18,24 @@ class ComposerStaticInit20fad51902f91e7fd3039e016a6556b5
     );
 
     public static $prefixDirsPsr4 = array (
+        'M1\\Env\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/m1/env/src',
+        ),
         'Firebase\\JWT\\' => 
         array (
             0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'j' => 
+        array (
+            'josegonzalez\\Dotenv' => 
+            array (
+                0 => __DIR__ . '/..' . '/josegonzalez/dotenv/src',
+                1 => __DIR__ . '/..' . '/josegonzalez/dotenv/tests',
+            ),
         ),
     );
 
@@ -29,6 +48,7 @@ class ComposerStaticInit20fad51902f91e7fd3039e016a6556b5
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit20fad51902f91e7fd3039e016a6556b5::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit20fad51902f91e7fd3039e016a6556b5::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit20fad51902f91e7fd3039e016a6556b5::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit20fad51902f91e7fd3039e016a6556b5::$classMap;
 
         }, null, ClassLoader::class);
