@@ -34,9 +34,9 @@ $cekRoleQuery = "SELECT role FROM users WHERE id = $ke_user_id";
 $roleResult = mysqli_query($conn, $cekRoleQuery);
 $penerima = mysqli_fetch_assoc($roleResult);
 
-if (!$penerima || $penerima['role'] !== 'influencer') {
+if (!$penerima || $penerima['role'] !== 'konten_kreator') {
     $response['status'] = false;
-    $response['message'] = "Donasi poin hanya bisa dikirimkan ke influencer.";
+    $response['message'] = "Donasi poin hanya bisa dikirimkan ke Konten Kreator.";
     echo json_encode($response);
     exit;
 }

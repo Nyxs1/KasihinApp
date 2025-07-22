@@ -144,6 +144,35 @@ INSERT INTO `users` (`id`, `nama`, `email`, `password`, `role`, `poin`, `bio_use
 (4, 'Putra', 'putra@mail.com', '123putra', 'influencer', 1000, 'Seorang influencer yang peduli sesama.');
 
 
+INSERT INTO `users` (`nama`, `email`, `password`, `role`, `poin`, `bio_user`) VALUES
+('Budi Santoso', 'budi@mail.com', 'password123', 'person', 1200, 'Suka berbagi untuk pendidikan anak.'),
+('Citra Lestari', 'citra@mail.com', 'password123', 'influencer', 2500, 'Beauty vlogger & animal lover. Mari berbuat baik bersama!'),
+('Dewi Anggraini', 'dewi@mail.com', 'password123', 'person', 950, 'Peduli lingkungan dan sesama.'),
+('Eko Prasetyo', 'eko@mail.com', 'password123', 'influencer', 5000, 'Tech reviewer. Teknologi untuk kebaikan.'),
+('Fitri Indah', 'fitri@mail.com', 'password123', 'person', 1500, NULL),
+('Gilang Ramadhan', 'gilang@mail.com', 'password123', 'influencer', 1800, 'Traveler dan fotografer. Menjelajahi keindahan sambil membantu.'),
+('Hana Yulita', 'hana@mail.com', 'password123', 'person', 2000, 'Mari bantu mereka yang membutuhkan.'),
+('Indra Wijaya', 'indra@mail.com', 'password123', 'influencer', 3200, 'Gamer & Streamer. Bermain game untuk amal.');
+
+
+SELECT 
+                ud.jumlah, 
+                ud.pesan, 
+                ud.tanggal, 
+                pengirim.nama as dari_nama,
+                penerima.nama as ke_nama 
+              FROM 
+                user_donations ud
+              JOIN 
+                users pengirim ON ud.dari_user_id = pengirim.id
+              JOIN 
+                users penerima ON ud.ke_user_id = penerima.id
+              WHERE
+                ud.ke_user_id = 2
+              ORDER BY 
+                ud.tanggal DESC 
+              LIMIT 5;
+
 CREATE TABLE `user_donations` (
   `id` int NOT NULL AUTO_INCREMENT,
   `dari_user_id` int NOT NULL,
