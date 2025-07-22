@@ -1,5 +1,5 @@
 <?php
-include '../config/database.php';
+include '../../config/database.php';
 
 $campaign_id = $_GET['campaign_id'];
 

@@ -1,5 +1,5 @@
 <?php
-include '../config/database.php';
+include '../../config/database.php';
 
 $user_id = $_GET['user_id'];
 $query = "SELECT * FROM poin_history WHERE user_id = $user_id ORDER BY tanggal DESC";

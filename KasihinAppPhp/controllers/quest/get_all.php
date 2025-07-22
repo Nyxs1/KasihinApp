@@ -1,5 +1,5 @@
 <?php
-include '../config/database.php';
+include '../../config/database.php';
 
 $query = "SELECT * FROM quests ORDER BY created_at DESC";
 $result = mysqli_query($conn, $query);

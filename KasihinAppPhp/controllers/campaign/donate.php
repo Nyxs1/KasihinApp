@@ -1,5 +1,5 @@
 <?php
-include '../config/database.php';
+include '../../config/database.php';
 
 $user_id = $_POST['user_id'];
 $campaign_id = $_POST['campaign_id'];

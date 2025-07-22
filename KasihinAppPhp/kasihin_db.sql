@@ -111,6 +111,7 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `role` enum('person','influencer') DEFAULT 'person',
   `poin` int DEFAULT '1000',
+  `bio_user` TEXT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -136,11 +137,24 @@ CREATE TABLE user_logs (
 -- Dumping data untuk tabel `users`
 --
 
-INSERT INTO `users` (`id`, `nama`, `email`, `password`, `role`, `poin`) VALUES
-(1, 'Endrico', 'endrico@mail.com', '123endrico', 'person', 1000),
-(2, 'Anas', 'anas@mail.com', '123anas', 'influencer', 1000),
-(3, 'Fachrizal', 'rizal@mail.com', '123rizal', 'person', 1000),
-(4, 'Putra', 'putra@mail.com', '123putra', 'influencer', 1000);
+INSERT INTO `users` (`id`, `nama`, `email`, `password`, `role`, `poin`, `bio_user`) VALUES
+(1, 'Endrico', 'endrico@mail.com', '123endrico', 'person', 1000, 'Halo! Saya Endrico, seorang donatur.'),
+(2, 'Anas', 'anas@mail.com', '123anas', 'influencer', 1000, 'Content creator yang suka berbagi kebaikan.'),
+(3, 'Fachrizal', 'rizal@mail.com', '123rizal', 'person', 1000, 'Ayo berdonasi bersama!'),
+(4, 'Putra', 'putra@mail.com', '123putra', 'influencer', 1000, 'Seorang influencer yang peduli sesama.');
+
+
+CREATE TABLE `user_donations` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `dari_user_id` int NOT NULL,
+  `ke_user_id` int NOT NULL,
+  `jumlah` int NOT NULL,
+  `pesan` TEXT NULL,
+  `tanggal` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`dari_user_id`) REFERENCES `users`(`id`),
+  FOREIGN KEY (`ke_user_id`) REFERENCES `users`(`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Indexes for dumped tables

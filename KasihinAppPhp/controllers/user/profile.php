@@ -1,5 +1,5 @@
 <?php
-include '../config/database.php';
+include '../../config/database.php';
 
 $user_id = $_GET['user_id'];
 $query = "SELECT * FROM users WHERE id = $user_id LIMIT 1";

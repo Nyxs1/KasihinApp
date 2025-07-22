@@ -3,7 +3,7 @@ require_once '../vendor/autoload.php';
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 
-include '../config/database.php';
+include '../../config/database.php';
 session_start();
 
 header('Content-Type: application/json');
